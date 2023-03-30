@@ -1,0 +1,2 @@
+# JavaScript
+função fábrica
