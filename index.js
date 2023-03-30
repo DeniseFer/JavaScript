@@ -1,4 +1,18 @@
-function alunos (nome, matricula, idade, saudeMental){
+function alunos (nome, matricula, idade, saudeMental){ // FUNÇÃO CONSTRUTORA
+    this.name = nome
+    this.mat = matricula
+    this.age = idade
+    this.issues = saudeMental
+    this.saudação = function(){
+        alert("Olá aluno "+ this.mat+". Você tem "+this.name+" anos de idade. 👌🤣😈😈😈")
+    }
+}
+
+let aluno1 = new alunos("Marla", 506, 78,"nao")
+aluno1.saudação()
+
+
+function alunos (nome, matricula, idade, saudeMental){ // FUNÇÃO FÁBRICA
     const obj={};
     obj.name = nome
     obj.mat = matricula
