@@ -29,3 +29,28 @@ let matricula1 = prompt("Digite sua matricula:\n")
 let idade1 = prompt("Digite sua idade:\n")
 let saudeMental1 = prompt("Digite sua saúde mental:\n")
 alunos(nome1, matricula1, idade1, saudeMental1).saudação()
+
+// GETTERS AND SETTERS
+
+ x = {a: 250} //HERANÇA
+ y = { }
+ //herda de x
+ y.__proto__ = x
+ 
+console.log(y.a);
+
+x.a =300 // novo valor para a
+
+console.log(y.a)
+
+
+x = {_a: 123,
+setA: function(valor){this.a = valor},// set escreve
+getA: function(){return this.a}} //get lê
+
+x = {_a: 123,
+     set a(valor){this._a =valor}, //funções em get e set na maneira atual
+     get a(){return this._a}}
+
+x.a =10
+
